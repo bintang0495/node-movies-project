@@ -14,6 +14,6 @@ app.use((req, res, next) => {
   });
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Aplikasi ini berjalan pada http://localhost:${port}`);
 });
